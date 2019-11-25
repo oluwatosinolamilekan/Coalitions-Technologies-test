@@ -11,6 +11,13 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
+
+Route::group(['prefix' => '/'], function () {
+    Route::get('','ProductController@index')->name('product.index');
+    Route::get('create','ProductController@getStore')->name('product.add');
+    Route::post('create','ProductController@store')->name('product.store');
 });

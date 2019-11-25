@@ -18,11 +18,7 @@ class Kernel extends ConsoleKernel
      * @var array
      */
     protected $commands = [
-        BarterMarket::class,
-        PalindromeNumbers::class,
-        MediaOfTwoSortedArrays::class,
-        ReverseInteger::class,
-        IntegerToRoman::class
+       
     ];
 
     /**
